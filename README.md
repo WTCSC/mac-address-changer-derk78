@@ -3,20 +3,22 @@
 
 # Shell MAC Address Changer
 
-**This script can only be run on linux.**
+This script allows you to change the MAC address of a specified network on a Linux system.
 
 ### How to use it
-- To run the script you have to use the `chmod +x` command on the file to give yourself execution privileges.
+- To run the script you must use the `chmod +x` command on the file to give yourself execution privileges.
 - Once you give yourself execution privileges to actually run the script you have to enter the path to the file in this case it would be `./mac_changer.sh`, the period at the beginning representing the current directory 
 - You also need to run the script at the root level using the `sudo` command before the path to the file.
 
 ### Dependencies
-This script has no dependencies other then having bash installed and being on a Linux system.
+- bash
+- Linux operating system 
+
 ### Error handling
 *This script has three functions to handle errors, `check_root`, `check_mac`, and `check_interface`.*
-- The `check_mac` function makes sure that the input is in the right format, if not it will return an error.
-- The `check_root` function ensures that you run the script at the root level with the sudo command and will prompt you to if you haven't.
-- Finally `check_interface` will check if the interface the MAC address will be assigned to actually exists on the system.
+- `check_mac` : Makes sure that the input for the MAC address is in the right format, if not it will return an error.
+- `check_root` : Checks if you are running the script at the root level with the sudo command and will prompt you to if you aren't.
+- `check_interface` : Checks if the interface the MAC address will be assigned to actually exists on the system.
 
 ### Example usage
 **Errors:**
