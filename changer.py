@@ -33,6 +33,8 @@ def check_interface(interface):
         print(f"The network interface {interface} doesn't exist.")
         sys.exit(1)
         
-def change_mac():
+def change_mac(interface):
     
+    subprocess.run(["ip", "link", interface, "down"], check=True)
+        
     
