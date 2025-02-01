@@ -12,7 +12,7 @@ This script allows you to change the MAC address of a specified network on a Lin
 
 ### How to use it (Python)
 
-The Python MAC address changer has virtually all the same functions and works in the same way with the same dependencies as the shell implementation. However to run the Python MAC address changer you must have Python installed, and input the path to the script into the terminal with `python` or `python3` infront of the path (e.g. `python3 changer.py`). Afterward you'll be prompted to enter the network interface and the MAC address you want to change.
+The Python MAC address changer has virtually all the same functions and works in the same way, with the same dependencies as the shell implementation. However, to run the Python MAC address changer you must have Python installed, and input the path to the script into the terminal with `python` or `python3` infront of the path (e.g. `python3 changer.py`). Afterward you'll be prompted to enter the network interface and the MAC address you want to change.
 
 ### Dependencies
 - Bash and/or Python
